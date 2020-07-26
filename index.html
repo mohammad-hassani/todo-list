@@ -7,10 +7,16 @@
   </head>
 
   <body>
-  <div id="app-2">
-  <span v-bind:title="message">
-    mouse over mi :)
-  </span>
+  <div id="app-3">
+
+    <ol>
+      <todo-item
+      v-for="item in grocerylist"
+      v-bind:todo="item"
+      v-bind:key="item.id">
+
+      </todo-item>
+    </ol>
 
   </div>
   <script src="index.js"></script>
